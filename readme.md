@@ -6,7 +6,6 @@ A learning project demonstrating Nginx configuration as a reverse proxy and load
 - SSL configuration for HTTPS
 - Multiple app instances using Docker Compose
 - some notes 
-
 - more notes are in the files.
 
 
