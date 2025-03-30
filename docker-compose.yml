@@ -30,6 +30,8 @@ services:
 # stop the services
 # docker-compose down
 
+# see the difference between docker-compose and kubernities in this link: https://spacelift.io/blog/docker-compose-vs-kubernetes 
+
 
 # if you go to the inspect tab  in the localhoset:8080 you will see that the server is ngninx and it is powered by express, this means that the requests are going through nginx.
 # though if you where the docker containers are running you will see no server in the network, meaning that the requests are going directly to where the container is running.
@@ -37,3 +39,18 @@ services:
 # instead of exposing all the applications. the three of the running applications should not be exposed to the public, this in production we wil open only the port 8080 in our case or whereever our nginx server is listents to
 # all the other ports will not be publicly accessible.
 # thats how it should work.
+
+# now lets configure https-with an encrypted connection.
+# so we want our clients to connect to our server using https protocol instead of http.
+# we want to allow secure ssl protocol requests.
+
+# ssl stands for secure socket layer.
+# it is a protocol that allows secure communication over a computer networ.
+# it is a standard technology for securing an internet connection by encryoting ata sent between a website and a browser ( or between two servers).
+# it prevents hackers from seeing or stealing any information transfarred, incluing personal information.
+
+# tls is an updated version of ssl, and more secure.
+
+# thus https that appears in the url when a website is secured by an ssl/tls certificate. users can view the etauls of th ecertificate, incluiding the issuing authority and the corporate name of the website owner, by clicking the lock symbol on the browser bar.
+
+#  see more details at https://www.digicert.com/what-is-ssl-tls-and-https#:~:text=SSL%3A%20Secure%20Sockets%20Layer,(or%20between%20two%20servers).
