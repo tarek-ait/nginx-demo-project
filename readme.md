@@ -3,7 +3,7 @@
 A learning project demonstrating Nginx configuration as a reverse proxy and load balancer, with HTTPS configuration.
 
 - Nginx as reverse proxy & load balancer
-- SSLconfiguration for HTTPS
+- SSL configuration for HTTPS
 - Multiple app instances using Docker Compose
 - some notes 
 
