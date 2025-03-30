@@ -31,3 +31,9 @@ services:
 # docker-compose down
 
 
+# if you go to the inspect tab  in the localhoset:8080 you will see that the server is ngninx and it is powered by express, this means that the requests are going through nginx.
+# though if you where the docker containers are running you will see no server in the network, meaning that the requests are going directly to where the container is running.
+# but this take us to the next steps.
+# instead of exposing all the applications. the three of the running applications should not be exposed to the public, this in production we wil open only the port 8080 in our case or whereever our nginx server is listents to
+# all the other ports will not be publicly accessible.
+# thats how it should work.
